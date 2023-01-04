@@ -37,9 +37,9 @@ function giaiPTB2($a, $b, $c) {
 
 
     if ($b <0){
-        echo "Phương trình: " . $a . "x2  " . $b . "x + " . $c . " = 0";
+        echo "Phương trình: " . $a . "x <sup>2</sup> " . $b . "x + " . $c . " = 0";
     }else {
-        echo "Phương trình: " . $a . "x2 + " . $b . "x + " . $c . " = 0";
+        echo "Phương trình: " . $a . "x<sup>2</sup> + " . $b . "x + " . $c . " = 0";
     }
     echo "<br>";
     // kiểm tra các hệ số
