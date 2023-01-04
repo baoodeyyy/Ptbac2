@@ -34,13 +34,19 @@ function giaiPTB2($a, $b, $c) {
     if ($c == "")
         $c = 0;
     // echo phương trình ra màn hình
-    echo "Phương trình: " . $a . "x2 + " . $b . "x + " . $c . " = 0";
+
+
+    if ($b <0){
+        echo "Phương trình: " . $a . "x2  " . $b . "x + " . $c . " = 0";
+    }else {
+        echo "Phương trình: " . $a . "x2 + " . $b . "x + " . $c . " = 0";
+    }
     echo "<br>";
     // kiểm tra các hệ số
     if ($a == 0) {
         if ($b == 0) {
             echo ("Phương trình vô nghiệm!");
-        } else {
+        } else  {
             echo ("Phương trình có một nghiệm: " . "x = " . (- $c / $b));
         }
         return;
@@ -70,7 +76,7 @@ function giaiPTB2($a, $b, $c) {
         </div>
         <div class="form-group">
             <label for="nhap b">nhập b</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" xin mời nhập b" name="heso_b" value="<?=$heso_c?>">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" xin mời nhập b" name="heso_b" value="<?=$heso_b?>">
         </div>
         <div class="form-group">
             <label for="nhap b">nhập c</label>
