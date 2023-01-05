@@ -16,9 +16,30 @@
 </head>
 <body>
     <?php
-    $fisrtName = "";
+    // khai báo biến
+    $firstName = "";
     $lastName = "";
-    
+    $email = "";
+    $phoneNumber = "";
+    $address1 = "";
+    $address2 = "";
+    $city = "";
+    $state = "";
+    $postal = "";
+
+    //
+    $checkInDate = "";
+    $checkOutDate = "";
+    $PickUpLocation = "";
+    $bookAddress1 = "";
+    $bookAddress2 = "";
+    $bookCity = "";
+    $bookState = "";
+    $bookPostal = "";
+    $ofGuest = "";
+    $note = "";
+
+
     ?>
     <div class="container">
         <header>
@@ -30,49 +51,49 @@
             <div class="row">
                 <div class="form-group col-sm">
                     <label for="Name">Name</label>
-                    <input type="text" class="form-control"  placeholder=" " value="<?php // biến ?>">
+                    <input type="text" class="form-control"  placeholder=" " value="<?php $firstName ?>">
                     <small id="firstName" class="form-text text-muted">First Name</small>
                 </div>
                 <div class="form-group col-sm">
                     <label class="text-white" for="LName">LastName</label>
-                    <input type="text" class="form-control"   placeholder=" " value="<?php // biến ?>">
+                    <input type="text" class="form-control"   placeholder=" " value="<?php $lastName ?>">
                     <small id="lastName" class="form-text text-muted">Last Name</small>
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm">
                     <label for="InputEmail1">Email</label>
-                    <input type="email" class="form-control"  placeholder=" " value="<?php // biến ?>">
+                    <input type="email" class="form-control"  placeholder=" " value="<?php $email ?>">
                     <small id="Email" class="form-text text-muted">Example@Example.com</small>
                 </div>
                 <div class="form-group col-sm">
                     <label for="exampleInputEmail1">Phone Number</label>
-                    <input type="text" class="form-control"   placeholder="(000)000-0000" value="<?php // biến ?>">
+                    <input type="text" class="form-control"   placeholder="(000)000-0000" value="<?php $phoneNumber ?>">
                     <small id="PhoneNumber" class="form-text text-muted">Please enter a valid phone number.</small>
                 </div>
             </div>
             <div class="">
                 <div class="form-group">
                     <label for="DiaChi">Address</label>
-                    <input type="text" class="form-control" id="DiaChi" placeholder="" value="<?php // biến ?>">
+                    <input type="text" class="form-control" id="DiaChi" placeholder="" value="<?php $address1 ?>">
                     <small id="DiaChi" class="form-text text-muted">Street Address</small>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" id="DiaChi" placeholder="" value="<?php // biến ?>">
+                    <input type="text" class="form-control" id="DiaChi" placeholder="" value="<?php $address2 ?>">
                     <small id="DiaChi" class="form-text text-muted">Street Address Line 2</small>
                 </div>
                 <div class="row">
                     <div class="form-group col-sm">
-                        <input type="text" class="form-control"  placeholder=" " value="<?php // biến ?>">
+                        <input type="text" class="form-control"  placeholder=" " value="<?php $city ?>">
                         <small id="City" class="form-text text-muted">City</small>
                     </div>
                     <div class="form-group col-sm">
-                        <input type="text" class="form-control"   placeholder=" " value="<?php // biến ?>">
+                        <input type="text" class="form-control"   placeholder=" " value="<?php $state ?>">
                         <small id="State" class="form-text text-muted">State / Province</small>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control"   placeholder=" " value="<?php // biến ?>">
+                    <input type="text" class="form-control"   placeholder=" " value="<?php $postal ?>">
                     <small id="Postal " class="form-text text-muted">Postal / Zip Code</small>
                 </div>
             </div>
@@ -80,37 +101,37 @@
                 <div class="row">
                     <div class="form-group col-sm">
                         <label for="Name">Check-in Date</label>
-                        <input type="date" class="form-control"  placeholder=" " value="<?php // biến ?>">
+                        <input type="date" class="form-control"  placeholder=" " value="<?php $checkInDate ?>">
                         <small id="indate" class="form-text text-muted">Date</small>
                     </div>
                     <div class="form-group col-sm">
                         <label for="LName">Check-out Date</label>
-                        <input type="date" class="form-control"   placeholder=" " value="<?php // biến ?>">
+                        <input type="date" class="form-control"   placeholder=" " value="<?php $checkOutDate ?>">
                         <small id="outdate" class="form-text text-muted">Date</small>
                     </div>
                 </div>
                 <div class="">
                     <div class="form-group">
                         <label for="LName">Pick-up Location</label>
-                        <input type="location" class="form-control"   placeholder=" " value="<?php // biến ?>">
+                        <input type="location" class="form-control"   placeholder=" " value="<?php $PickUpLocation ?>">
                         <small id="outdate" class="form-text text-muted">Street Address</small>
                     </div>
                     <div class="form-group">
-                        <input type="location" class="form-control"   placeholder=" " value="<?php // biến ?>">
+                        <input type="location" class="form-control"   placeholder=" " value="<?php $bookAddress1 ?>">
                         <small id="outdate" class="form-text text-muted">Street Address Line 2</small>
                     </div>
                     <div class="row">
                         <div class="form-group col-sm">
-                            <input type="text" class="form-control"  placeholder=" " value="<?php // biến ?>">
+                            <input type="text" class="form-control"  placeholder=" " value="<?php $bookCity ?>">
                             <small id="City" class="form-text text-muted">City</small>
                         </div>
                         <div class="form-group col-sm">
-                            <input type="text" class="form-control"   placeholder=" " value="<?php // biến ?>">
+                            <input type="text" class="form-control"   placeholder=" " value="<?php $bookState ?>">
                             <small id="State" class="form-text text-muted">State / Province</small>
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control"   placeholder=" " value="<?php // biến ?>">
+                        <input type="text" class="form-control"   placeholder=" " value="<?php $bookPostal ?>">
                         <small id="Postal " class="form-text text-muted">Postal / Zip Code</small>
                     </div>
                 </div>
@@ -136,7 +157,7 @@
                 <div class="row">
                     <div class="form-group col-sm">
                         <label for="Name">#of Guests</label>
-                        <input type="text" class="form-control"  placeholder="e.g.,4" value="<?php // biến ?>">
+                        <input type="text" class="form-control"  placeholder="e.g.,4" value="<?php $ofGuest ?>">
                     </div>
                     <div class="form-group col-sm" >
                         <!--                    <input type="text" class="form-control"   placeholder=" " value="--><?php //// biến ?><!--">-->
@@ -145,7 +166,7 @@
                 </div>
                 <div class="form-group">
                     <label for="Name">Note</label>
-                    <input type="text" class="form-control size"  placeholder="" value="<?php // biến ?>">
+                    <input type="text" class="form-control size"  placeholder="" value="<?php $note ?>">
                 </div>
             <div class="container">
                 <h4>The submission of this form makes a reservation for the type of room selected in the form.
